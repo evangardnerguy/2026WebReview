@@ -1,0 +1,147 @@
+HTML Review
+
+What does HTML stand for?
+Hypertext Markup Language
+
+What is the difference between <head> and <body>?
+Head manages the metadata read by the browser, Body manages the content displayed
+
+Name 3 semantic HTML elements
+<header></header>
+<main></main>
+<footer></footer>
+<nav></nav>
+<article></article>
+<aside></aside>
+<section></section>
+
+What attribute does an <a> tag need to create a link?
+<a href="https://www.google.com">
+
+What is a self-closing HTML tag?
+Self closing tags are tags that only need one opening tag to function.
+<br>, <img>, <meta>, <link>
+
+What does <!DOCTYPE html> do?
+This tells the browser that the file is a HTML file.
+
+Every HTML file has the same skeleton structure
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link>
+    <style></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<body>
+    <header>
+        <nav>Contains any navigation bar elements</nav>
+    </header>
+    <h1>Largest Heading/most important heading, ONCE per page</h1>
+    <!-- All visible elements go inside the body -->
+</body>
+</html>
+
+P2 Core HTML elements
+Heading 1-6
+1: Biggest
+2: Section titles, subtitles
+3: sub-sections
+4: 
+5: Fine Print
+6: behbeh text c:
+Only 1 h1 per page
+
+Text Elements
+<p>paragraph</p>
+<strong>bold</strong>
+<em>italic</em>
+<br>line break, void element
+<u>underlined</u>
+<hr>horizontal row, void element
+<span>inline element</span>
+<mark>highlights text</mark>
+
+HTML Lists
+Unordered Lists - bulleted
+Items with no ranking order
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+Ordered Lists - numbered/alphabeticized
+Items with ranking order
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+Links & Images
+
+How do I create a link to sllboces.org?
+<a href="https://sll.boces.org" target="_blank">SLL BOCES</a>
+
+How do I create a link to a relative path?(page in the same directory)
+<a href="about.html">About</a>
+
+Link to a file in the content folder?
+<a href="content/page.html">Page</a>
+
+A link to another section of the page?
+<a href="#about">Jump to the About section</a>
+
+A link to send an email?
+<a href="mailto:student@sllboces.org">Email Me</a>
+
+Images
+What are the 2 required attributes for <img>?
+alt - accessibility text
+src - file path to the Images
+<img src="images/hero.jpg" alt="Hero image">
+
+What is hot-linking an image?
+linking to an image somewhere on the internet
+Placeholder designs
+Replace hotlinks before publishing
+If the hotlinked image gets moved, it will break your design
+
+<img src="https://google.com/2/abc/file/images/myGoogleImage.png" alt="my hotlinked image">
+
+P3
+What is a semantic HTML element?
+semantic elements describe the meaning of the content inside of the elemment, not just the way it looks
+
+Reason why we use semantic elements?
+Organization
+
+Effects the document object model - How the browser reads or understands the content
+
+Accessibility - allows screen readers to understand the structure and meaning better content
+
+SEO - Search Engine Optimization - how search engines rank well-structured pages - moves then higher in the results
+
+Semantic tags replaced the use of <div> tags
+    <div class="header"> vs <header>
+
+Layout Semantic Elements
+<header></header>
+<nav></nav>
+<main></main>
+<section></section>
+<aside></aside>
+<footer></footer>
+
+Content Semantic Elements
+<figure>image w/ caption</figure>
+<figcaption>caption for a fig image</figcaption>
+<time>time</time>
+<address>contact address info</address>
+<mark>highlighted text</mark>
+<details></details> / <summary>expand and collapse details</summary>
+<div>non-semantic container</div>
