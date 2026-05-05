@@ -119,6 +119,7 @@ header {
     background-position: center;
     min-height: 100vh;
     font-family: var(--font-bold);
+    overflow: hidden;
 }
 
 /* Dark overlay on the hero image for text readability */
@@ -251,65 +252,91 @@ section:last-child {
     PROJECTS SECTION
     =============================================== */
 .projects-grid {
-    ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .project-card {
-    ;
+    flex: 1 1 260px;
+    border: 3px double var(--color-black);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25)
 }
 
 .project-card-header {
-    ;
-}
-
-.project-card-header h3 {
-    ;
+    background-color: var(--color-black);
+    padding: 1rem 1.2rem;
+    color: var(--color-gold);
+    border-radius: 3px;
 }
 
 .project-card-body {
-    ;
+    padding: 1rem 1.2rem;
 }
 
 .project-card-body p {
-    ;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .project-link {
-    ;
+    display: inline-block;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: var(--radius);
+    transition: background-color 0.5s;
 }
 
 .project-link:hover {
-    ;
+    background-color: var(--color-blue);
+    color: var(--color-gold);
 }
 
 /* ===============================================
     SKILLS TABLE
     =============================================== */
 .skills-table {
-    ;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-sm);
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
 .skills-table th {
-    ;
-}
-
-.skills-table td {
-    ;
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    font-weight: 600;
 }
 
 .skills-table tr:nth-child(even) {
-    ;
+    background-color: var(--color-ltblue);
+    color: var(--color-white);
 }
 
 .skills-table tr:hover {
-    ;
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 /* ===============================================
     FOOTER — Flexbox Required!
     =============================================== */
 footer {
-    ;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2.5rem 2rem 1rem;
 }
 
 /* TODO #5: Complete the footer Flexbox layout.
@@ -319,29 +346,50 @@ footer {
     - Space the columns evenly across the footer
     - Add a gap between columns               */
 .footer-container {
-    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    min-width: 140px;
 }
 
 .footer-col h4 {
-    ;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--color-ltgreen);
+    padding-bottom: 0.5rem;
 }
 
 .footer-nav-links {
-    ;
+    list-style: none;
+    padding: none;
 }
 
 .footer-nav-links li {
-    ;
+    margin-bottom: 0.5rem;
 }
 
 .footer-nav-links a {
-    ;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.5s;
 }
 
 .footer-nav-links a:hover {
-    ;
+    color: var(--color-gold);
 }
 
 .footer-bottom {
-    ;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-ltgreen);
+    font-size: 0.85rem;
+    color: var(--color-ltblue);
 }
